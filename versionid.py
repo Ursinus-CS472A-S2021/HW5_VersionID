@@ -116,10 +116,10 @@ def get_csm_enhanced(C1, C2, b):
     """
     M = C1.shape[1] - b + 1
     N = C2.shape[1] - b + 1
-    S = np.zeros((M, N))
+    Db = np.zeros((M, N))
     ## TODO: Fill this in.  Compute the OTI and the original CSM.
     ## Then, diagonally average the CSM and store the result in S
-    return S
+    return Db
 
 def binary_csm(CSM, k):
     """
